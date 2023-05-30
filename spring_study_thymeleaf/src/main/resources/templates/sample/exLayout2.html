@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org" lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<th:block th:replace="~{/fragments/fragment3 :: target(~{this :: #uLFirst}, ~{this :: #uLSecond})}">
+		<ul id="uLFirst">
+			<li>첫번째 파라미타 : aaa</li>
+			<li>두번째 파라미타 : bbb</li>
+			<li>세번째 파라미타 : ccc</li>
+		</ul>
+		
+		<ul id="uLSecond">
+			<li>첫번째 파라미타 : aaa</li>
+			<li>두번째 파라미타 : bbb</li>
+			<li>세번째 파라미타 : ccc</li>
+		</ul>
+		
+	</th:block>
+
+
+	
+
+</body>	
+</html>

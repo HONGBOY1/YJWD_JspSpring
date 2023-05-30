@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org" lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Thymeleaf 링크 처리 : th:href 활용 예제</h1>
+		<p>
+	<ul>
+		<li th:each="dto : ${list}">
+			<a th:href="@{/sample/exView}">[[${dto}]]</a>
+		</li>
+	</ul>
+	
+	<hr>
+	<h1>Thymeleaf 링크 처리 : th:href 활용 예제 - 파라미터 추가</h1>
+		<p>
+	<ul>
+		<li th:each="dto : ${list}">
+			<a th:href="@{/sample/exView2(sno=${dto.sno})}">[[${dto}]]</a>
+		</li>
+	</ul>
+	
+	<hr>
+	<h1>Thymeleaf 링크 처리 : th:href 활용 예제 - path이용 파리미터 추가</h1>
+		<p>
+	<ul>
+		<li th:each="dto : ${list}">
+			<a th:href="@{/sample/exView3/{sno}(sno=${dto.sno})}">[[${dto}]]</a>
+		</li>
+	</ul>
+	
+	
+</html>

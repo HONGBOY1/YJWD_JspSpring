@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+   <th:block th:replace="~{layout/layout1::setContent(~{this::content})}">
+      <th:block th:fragment="content">
+         <h1>문제2: 결과(구현완료)</h1><br>
+         <h2>웹프로그래밍2 중간고사 실기시험 페이지</h2><br>
+         <h3>현재 보여지는 부분에 문항별 코딩 결과를 포함</h3><br>
+         <a href="/home">홈으로 돌아가기</a><br>
+      </th:block>
+   </th:block>
+</body>
+</html>

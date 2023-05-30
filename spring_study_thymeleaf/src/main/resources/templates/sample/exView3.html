@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org" lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Thymeleaf 링크 테스트 : 파라미터 추가 링크 클릭후 실행 화면</h1>
+		<p>
+	<h2>@RequsetParam 사용</h2>
+	<ul>
+		<li th:text="'sno : '+ ${sno}"></li>
+	</ul>
+	<p>
+	<a th:href="@{/sample/exLink}">돌아가기</a>
+</body>	
+</html>
